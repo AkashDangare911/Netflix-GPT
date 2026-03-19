@@ -1,11 +1,12 @@
 import './App.css'
+import Body from '../src/Components/Body'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <div className='flex flex-col justify-center align-middle text-center'>
-      <h1 className="text-3xl">Hello World</h1>
-      <p className="text-lg">This is basic setup for the React app with Tailwind CSS.</p>
-    </div>
+    <BrowserRouter>
+      <Body />
+    </BrowserRouter>
   )
 }
 
